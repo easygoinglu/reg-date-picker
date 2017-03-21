@@ -1,0 +1,25 @@
+{
+  "name": "reg-date-picker",
+  "version": "1.0.0",
+  "description": "regional date picker",
+  "main": "./dist/DatePicker.bundle.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "css-loader": "^0.26.2",
+    "file-loader": "^0.10.1",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "mocha": "^3.2.0",
+    "sinon": "^2.0.0",
+    "sinon-test": "^1.0.1",
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1"
+  }
+}

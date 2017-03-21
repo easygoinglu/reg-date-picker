@@ -1,0 +1,99 @@
+.rdpicker-clearfix::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.rdpicker-wrapper{
+  position: relative;
+  display: inline-block;
+}
+
+.rdpicker{
+  position: absolute;
+  z-index: 9999;
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 320px;
+  border: 1px solid #E6E6E6;
+
+  .rdpicker-nav-bar{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+
+    &:extend(.rdpicker-clearfix::after);
+
+    .rdpicker-nav{
+      width: 20px;
+      height: 20px;
+      background-size: 20px;   
+      margin: 0 5px;
+      font-weight: bold;
+      cursor: pointer;
+
+      &.rdpicker-previous-year-nav{
+        background-image: url(../img/angle-double-left.svg);   
+        float: left;      
+      }
+
+      &.rdpicker-previous-month-nav{
+        background-image: url(../img/angle-left.svg);
+        float: left;
+      }
+
+      &.rdpicker-next-year-nav{
+        background-image: url(../img/angle-double-right.svg);
+        float: right;
+      }
+
+      &.rdpicker-next-month-nav{
+        background-image: url(../img/angle-right.svg);
+        float: right;
+      }    
+    }    
+    .rdpicker-month{
+      margin-right: 10px;
+    }    
+  }
+
+  .rdpicker-weeks{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding: 5px 0; 
+
+    .rdpicker-week{
+      width: 45px;
+      line-height: 30px;
+    }
+  }
+
+  .rdpicker-days{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .rdpicker-day{
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      margin: 1px;
+      border: 2px solid #FFFFFF;
+      border-radius: 25px;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #F6CED8;
+      }
+
+      &.rdpicker-selected-date{
+        border: 2px solid #F6CED8;
+      }
+
+      &.rdpicker-previous-month, &.rdpicker-next-month{
+        color: #BDBDBD;
+      }
+    }
+  }  
+}

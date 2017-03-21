@@ -1,0 +1,4 @@
+module.exports = {
+  PERSIAN_EPOCH: 1948320.5,
+  GREGORIAN_EPOCH: 1721425.5
+};
