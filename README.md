@@ -150,3 +150,9 @@ Chrome, Firefox, Safari (not test in IE/Edge yet)
 ## Dependencies
 
 Less
+
+## Using
+
+* pure js + less
+* mocha + chi + sinon
+* webpack
