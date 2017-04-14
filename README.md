@@ -3,6 +3,8 @@
 ## Introduction
 This date picker supports multiple calendar types, including Gregorian Calendar and Buddhist Calendar.
 
+   ![calendar in action](./calendar-screen.png)
+
 ## Installation
 
 #### Steps:
