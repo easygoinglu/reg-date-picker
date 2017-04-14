@@ -3,7 +3,7 @@
 ## Introduction
 This date picker supports multiple calendar types, including Gregorian Calendar and Buddhist Calendar.
 
-  <img src="ralendar-screen.png" height="300" />
+  <img src="calendar-screen.png" height="300" />
 
 ## Installation
 
