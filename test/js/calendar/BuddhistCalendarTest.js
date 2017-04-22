@@ -71,8 +71,8 @@ describe("BuddhistCalendar", function() {
   describe("#convertDateFormat()", function() {
     it("should convert date to YYYY/MM/DD format.", function() {
       //prepare input parameter
-      var options1 = {unixTime: 1483200000};
-      var options2 = {unixTime: 1507564800};
+      var options1 = {unixTime: 1483228800};
+      var options2 = {unixTime: 1507593600};
       var calendar1= new BuddhistCalendar(options1);
       var calendar2 = new BuddhistCalendar(options2);
 
@@ -86,7 +86,7 @@ describe("BuddhistCalendar", function() {
   describe("#getFirstDayOfWeek()", function() {
     it("should get week of first day", sinon.test(function() {
 
-      var options = {unixTime: 1483200000}; //2017/01/01
+      var options = {unixTime: 1483228800}; //2017/01/01
       var calendar = new BuddhistCalendar(options);
       var dateObject = calendar.getDateObject();
       expect(dateObject.getYear()).to.eql(2560);
@@ -103,7 +103,6 @@ describe("BuddhistCalendar", function() {
   describe("#getDayNumberOfMonth()", function() {
     it("should get day number of month", sinon.test(function() {
 
-      var options = {unixTime: 1483200000}; //2017/01/01
       var calendar = new BuddhistCalendar({});
       var dateObject1 = new DateObject(2560,1,1);    
       var dateObject2 = new DateObject(2559,2,1);    
