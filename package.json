@@ -5,7 +5,7 @@
   "main": "./dist/DatePicker.bundle.js",
   "scripts": {
     "build": "webpack",
-    "test": "mocha"
+    "test": "mocha --recursive"
   },
   "author": "",
   "license": "ISC",
