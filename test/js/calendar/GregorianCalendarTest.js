@@ -54,7 +54,7 @@ describe("GregorianCalendar", function() {
   describe("#convertCalendarDateToUnixTime()", function() {
     it("should convert calendar DateObject to unix time", sinon.test(function() {
 
-      var options = {unixTime: 1483200000};
+      var options = {unixTime: 1483228800};
       var calendar = new GregorianCalendar(options);
       var dateObject = calendar.getDateObject();
       expect(dateObject.getYear()).to.eql(2017);
@@ -71,8 +71,8 @@ describe("GregorianCalendar", function() {
   describe("#convertDateFormat()", function() {
     it("should convert date to YYYY/MM/DD format.", function() {
       //prepare input parameter
-      var options1 = {unixTime: 1483200000};
-      var options2 = {unixTime: 1507564800};
+      var options1 = {unixTime: 1483228800};
+      var options2 = {unixTime: 1507593600};
       var calendar1= new GregorianCalendar(options1);
       var calendar2 = new GregorianCalendar(options2);
 
@@ -87,18 +87,18 @@ describe("GregorianCalendar", function() {
     it("should get month name of calendar", function() {
 
       //prepare input parameter      
-      var options1 = {unixTime: 1483200000};
-      var options2 = {unixTime: 1485878400};
-      var options3 = {unixTime: 1488297600};
-      var options4 = {unixTime: 1490976000};
-      var options5 = {unixTime: 1493568000};
-      var options6 = {unixTime: 1496246400};
-      var options7 = {unixTime: 1498838400};
-      var options8 = {unixTime: 1501516800};
-      var options9 = {unixTime: 1504195200};    
-      var options10 = {unixTime: 1507564800};
-      var options11 = {unixTime: 1509465600};
-      var options12 = {unixTime: 1512057600};
+      var options1 = {unixTime: 1483228800};
+      var options2 = {unixTime: 1485907200};
+      var options3 = {unixTime: 1488326400};
+      var options4 = {unixTime: 1491004800};
+      var options5 = {unixTime: 1493596800};
+      var options6 = {unixTime: 1496275200};
+      var options7 = {unixTime: 1498867200};
+      var options8 = {unixTime: 1501545600};
+      var options9 = {unixTime: 1504224000};    
+      var options10 = {unixTime: 1506816000};
+      var options11 = {unixTime: 1509494400};
+      var options12 = {unixTime: 1512086400};
 
 
       var calendar1 = new GregorianCalendar(options1);
@@ -134,7 +134,7 @@ describe("GregorianCalendar", function() {
   describe("#getFirstDayOfWeek()", function() {
     it("should get week of first day", sinon.test(function() {
 
-      var options = {unixTime: 1483200000}; //2017/01/01
+      var options = {unixTime: 1483228800}; //2017/01/01
       var calendar = new GregorianCalendar(options);
       var dateObject = calendar.getDateObject();
       expect(dateObject.getYear()).to.eql(2017);
@@ -151,7 +151,6 @@ describe("GregorianCalendar", function() {
   describe("#getDayNumberOfMonth()", function() {
     it("should get day number of month", sinon.test(function() {
 
-      var options = {unixTime: 1483200000}; //2017/01/01
       var calendar = new GregorianCalendar({});
       var dateObject1 = new DateObject(2017,1,1);    
       var dateObject2 = new DateObject(2016,2,1);    
