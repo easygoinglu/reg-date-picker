@@ -24,8 +24,9 @@ BuddhistCalendar.prototype.convertDateToCalendarDate = function(date){
 };
 
 BuddhistCalendar.prototype.convertCalendarDateToUnixTime = function(){
-  return new Date(this.getDateObject().getYear() - BUDDHIST_YEAR_INCREATEMENT, this.getDateObject().getMonth() - 1, 
-    this.getDateObject().getDay()).getTime() / 1000;  
+  var date = new Date(this.getDateObject().getYear() - BUDDHIST_YEAR_INCREATEMENT, this.getDateObject().getMonth() - 1, 
+    this.getDateObject().getDay());
+  return (date.getTime() - date.getTimezoneOffset() * 60 * 1000) / 1000;  
 };
 
 BuddhistCalendar.prototype.convertDateFormat = function(){

@@ -54,7 +54,7 @@ describe("BuddhistCalendar", function() {
   describe("#convertCalendarDateToUnixTime()", function() {
     it("should convert calendar DateObject to unix time", sinon.test(function() {
 
-      var options = {unixTime: 1483200000};
+      var options = {unixTime: 1483228800};
       var calendar = new BuddhistCalendar(options);
       var dateObject = calendar.getDateObject();
       expect(dateObject.getYear()).to.eql(2560);
